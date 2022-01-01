@@ -1,1 +1,6 @@
-# SchoolManagement
+# SchoolManagement[School-Project-tasks.pdf](https://github.com/blackmagiczar/SchoolManagement/files/7797895/School-Project-tasks.pdf)
+[index.zip](https://github.com/blackmagiczar/SchoolManagement/files/7797896/index.zip)
+[indexStyle.zip](https://github.com/blackmagiczar/SchoolManagement/files/7797898/indexStyle.zip)
+[Login-form.zip](https://github.com/blackmagiczar/SchoolManagement/files/7797899/Login-form.zip)
+[registration.zip](https://github.com/blackmagiczar/SchoolManagement/files/7797900/registration.zip)
+[Website-info.zip](https://github.com/blackmagiczar/SchoolManagement/files/7797901/Website-info.zip)
