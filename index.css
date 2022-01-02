@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p.logo{
+    font-size: 2rem;
+}
+nav a{
+    padding: 1rem;
+}
+h1{
+    margin-bottom: 0rem;
+}
+.image{
+    background-color: grey;
+    width: 95vw;
+    height: 70vh;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+}
+footer nav a{
+    padding: .5rem;
+}
