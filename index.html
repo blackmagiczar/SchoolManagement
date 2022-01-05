@@ -6,19 +6,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="index.css">
+	<script src="indexScripts.js"></script>
 	<title>Add title Here</title>
 </head>
 <body>
+	<!-- *********************************** -->
+	<!-- Login form here -->
+	<div class="loginForm" id="loginForm">
+		<form action="" method="get">
+			<p class="logo">School Management</p>
+			<table>
+				<tr>
+					<td>
+						<label for="username">Username</label>
+					</td>
+					<td>
+						<input type="text" id="username" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="password">password</label>
+					</td>
+					<td>
+						<input type="password" id="password" required>	
+					</td>
+				</tr>
+			</table>
+			<button type="submit">Login</button>
+		</form>
+	</div>
+	<!-- *********************************** -->
 	<header>
 		<p class="logo">School Management</p>
 		
 		<nav>
-			<a href="loginForm.php">Login</a>
+			<a onclick="toggleLogin()" id="loginButton">Login</a>
 			<a href="registration.php">Register Here</a>
 			<a href="Website-info.html">About</a>
 		</nav>
 	</header>
 	<hr>
+	
 	<main>
 		<h1>
 			Revolutionise the way you manage your school.
@@ -43,7 +72,7 @@
 			<p>Privacy Policy</p>
 		</div>
 		<nav>
-			<a href="loginForm.php">Login</a>
+			<a onclick="toggleLogin()" id="loginButton">Login</a>
 			<a href="registration.php">Register Here</a>
 			<a href="Website-info.html">About</a>
 		</nav>

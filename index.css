@@ -26,5 +26,48 @@ footer nav{
     flex-direction: column;
 }
 footer nav a{
+    /* padding: .5rem; */
+}
+nav a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+/* Login Form */
+div.loginForm{
+    position: absolute;
+    width: 100vw;
+    /* background-color: blue; */
+    height: 100vh;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: black 1px solid;
+    padding: 12rem 3rem;
+    box-shadow: black 2px 5px 7px;
+    /* height: 85vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form *{
+    margin: 1rem 0px;
+    font-size: 1.2rem;
+}
+body div.loginForm{
+    background-color: grey;
+    opacity: .8;
+    display: none;
+}
+form button{
     padding: .5rem;
+    background-color: green;
+    color: white;
+}
+#loginButton:hover{
+    cursor: pointer;
 }
