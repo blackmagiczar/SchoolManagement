@@ -15,10 +15,14 @@
 			  setcookie($userN,$name);
 			  setcookie($userPass,$password);
 			  echo "<p>passed form data here</p>";
-			  $sqlPasswCheck = "SELECT*FROM registration WHERE password1 LIKE ".'"'.$password.'"';
-			  $sqlUsername = "SELECT*FROM registration WHERE firstN LIKE ".'"'.$name.'"';
-			  if(mysqli_query($conn,$sqlUsername)){
-				  if(mysqli_query($conn,$sqlPasswCheck)){
+			  $sqlPasswCheck = "SELECT*FROM registration WHERE password1 = ".'"'.$password.'"';
+			  $sqlUsername = "SELECT*FROM registration WHERE firstN = ".'"'.$name.'"';
+			  $passwordRes = mysqli_query($conn,$sqlPasswCheck);
+			  $usernameRes = mysqli_query($conn,$sqlUsername);
+			  $cornfirmPassw = mysqli_fetch_array($passwordRes);
+			  $checkUsername = mysqli_fetch_array($usernameRes);
+			  if(isset($checkUsername)){
+				  if(isset($cornfirmPassw)){
 					  echo "<p>Hello! ". $name . ". your password is ". $password .'. <a href = "processSessionData.php">Click here to view details</a>'."</p>";
 				  }
 				  else{
